@@ -23,6 +23,25 @@
         <SupportsPixelsOnly>false</SupportsPixelsOnly>
       </Palette>
     </Palettes>
+    <Images>
+      <Type>Sprite</Type>
+      <Image>
+        <Frame>
+          <Name>player</Name>
+          <Palette>ZX Spectrum</Palette>
+          <Width>16</Width>
+          <Height>16</Height>
+          <IsMasked>false</IsMasked>
+          <MaskMode>false</MaskMode>
+          <MaskAlpha>0.750000</MaskAlpha>
+          <MaskColor>255</MaskColor>
+          <HotSpotX>-1</HotSpotX>
+          <HotSpotY>-1</HotSpotY>
+          <Pixels>AAAAHPPOHPPOHPPOHNLOHNLOHNLOHPPOHPPOHPPOGPPGGPPGGAAGHPPOHPPOAAAA</Pixels>
+          <Attributes>AGAGAGAG</Attributes>
+        </Frame>
+      </Image>
+    </Images>
   </ImageEditor>
   <MapEditor>
     <Settings>
@@ -58,7 +77,15 @@
     <Screens/>
   </MapEditor>
   <StringEditor>
-    <Tables/>
+    <Tables>
+      <Table>
+        <Name>strings</Name>
+        <String>
+          <ID>INTRODUCTION</ID>
+          <Value>Hello Games!</Value>
+        </String>
+      </Table>
+    </Tables>
   </StringEditor>
   <CodeEditor>
     <Settings>
@@ -82,7 +109,9 @@
     </Settings>
     <Files>
       <File>game.asm</File>
-      <File>characters.asm</File>
+      <File>draw.asm</File>
+      <File>sprites.asm</File>
+      <File>strings.asm</File>
     </Files>
   </CodeEditor>
 </TommyGunProject>
