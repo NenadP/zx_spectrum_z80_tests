@@ -5,6 +5,8 @@
 DRAW:                     ; routine expects sprite data in DE, and sprite coords
                           ; in BC (B = x, C = y, x max = 15, y max = 11 
     ;call 3503            ; clears the screen TODO
+    ld a,1                ; One is blue
+    call 8859             ; We'll set the border colour to blue
     push de               ; we push, pop DE (sprite data), BC (coords) to 
     call TRANSLATE_COORDS ; free it up to use in routines                                           
     pop de                ; we call translating/drawing routines to draw given
@@ -104,4 +106,4 @@ DOUBLE_B_TO_L:
     add a, b
     add a, b
     ld l, a  
-    ret
+    ret                                              
